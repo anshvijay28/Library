@@ -5,8 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    
-</body>
+    <body>
+        <div class="whole-page">
+            <div class = "banner"><h1 class = title>Library</h1></div>
+            <div class = "books">
+                
+            </div>   
+            <div class="card-container hidden">
+                <div class="card">
+                    <a class="signup">Enter Book</a>
+                    <div class="inputBox1">
+                        <input type="text" id = "title" required>
+                        <span class="user">Title</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" id = "author" required>
+                        <span>Author</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="number" id = "numPages" required>
+                        <span>Pages</span>
+                    </div>
+                    <div class="readInput">
+                        <input class = "read" type="checkbox" id = "readBook" required>
+                        <span>I have read the book</span>
+                    </div>
+                    <button class= "enter" type = "submit">Add Book</button>
+                </div>
+            </div>
+            <div class = "button-container">
+                <button class = "newBook">New Book</button>
+            </div>
+        </div>
+    </body>
 </html>
